@@ -40,14 +40,16 @@ h1 {
   border-radius: 10px;
 }
 
-.info {
+.col-4, .col-8 {
   width: 60%;
   max-width: 1200px;
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
   text-align: left;
   margin-top: 0px;
+  padding-left: 20px;
   padding: 20px;
+  
   box-shadow: 2px 2px 7px rgb(187, 198, 214);
   border-radius: 10px;
 }

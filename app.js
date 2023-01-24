@@ -2,9 +2,9 @@ function crearCV(a,b,c,d,e) {
   return a+b+c+d+e
 }
 
-function calcularEdad(fecha) {
+function getEdad(dateString) {
   let hoy = new Date()
-  let fechaNacimiento = new Date(fecha)
+  let fechaNacimiento = new Date(dateString)
   let edad = hoy.getFullYear() - fechaNacimiento.getFullYear()
   let diferenciaMeses = hoy.getMonth() - fechaNacimiento.getMonth()
   if (
@@ -35,6 +35,6 @@ document.getElementById(`crear-cv`).addEventListener(`click`, function () {
   document.getElementById(`contenedor-telefono`).innerHTML = telefono
   document.getElementById(`contenedor-email`).innerHTML = email
   document.getElementById(`contenedor-direccion`).innerHTML = nombre
-  document.getElementById(`contenedor-edad`).innerHTML = calcularEdad()
+  document.getElementById(`contenedor-edad`).innerHTML = getEdad()
   
 });
