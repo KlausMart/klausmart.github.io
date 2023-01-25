@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0px;
   box-sizing: border-box;
@@ -13,6 +15,10 @@ body {
   font-family: 'Nunito', sans-serif;
   box-shadow: 2px 2px 7px rgb(187, 198, 214);
   text-align: center;
+}
+
+h4 {
+  color: rgb(255, 255, 255);
 }
 
 
@@ -36,20 +42,36 @@ h1 {
   text-align: center;
   margin-top: 50px;
   padding: 20px;
-  box-shadow: 2px 2px 7px rgb(187, 198, 214);
+  box-shadow: 2px 2px 7px rgb(111, 144, 194);
   border-radius: 10px;
 }
 
-.col-4, .col-8 {
-  width: 60%;
+.col-2 {
+  float: left;
+  width: 20%;
   max-width: 1200px;
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
   text-align: left;
-  margin-top: 0px;
+  margin: 0px;
   padding-left: 20px;
   padding: 20px;
-  
+  box-shadow: 2px 2px 7px rgb(187, 198, 214);
+  border-radius: 10px;
+}
+
+
+
+.col-10 {
+  float: right;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  margin: 0px;
+  padding-left: 20px;
+  padding: 20px;
   box-shadow: 2px 2px 7px rgb(187, 198, 214);
   border-radius: 10px;
 }
@@ -68,10 +90,12 @@ p {
   color: rgb(0, 0, 0);
 }
 
-h3 span,
-p span {
-  color: rgb(56, 103, 199);
+h3 {
+  color: rgb(53, 85, 173);
+  text-decoration-line: underline;
 }
+
+
 
 img {
   border-radius: 50%;
