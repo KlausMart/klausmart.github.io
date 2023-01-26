@@ -2,9 +2,9 @@ function crearCV(a,b,c,d,e) {
   return a+b+c+d+e
 }
 
-function getEdad(dateString) {
+function getEdad(fecha) {
   let hoy = new Date()
-  let fechaNacimiento = new Date(dateString)
+  let fechaNacimiento = new Date(fecha)
   let edad = hoy.getFullYear() - fechaNacimiento.getFullYear()
   let diferenciaMeses = hoy.getMonth() - fechaNacimiento.getMonth()
   if (
