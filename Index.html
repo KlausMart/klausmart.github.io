@@ -29,7 +29,7 @@
                 <input type="text" id="direccion" required>
             </label>
             <label>Fecha de Nacimiento
-                <input type="date" id="fecha" required>
+                <input type="date" id="fechaNacimiento" min="01-01-1930" max="31-12-2026" required>
             </label>
             <button type="button" id="crear-cv">Crear CV</button>
         </form>
@@ -58,8 +58,8 @@
                         producir ideas interesantes para
                         futuros proyectos que no
                         van a pasar desapercibidas</p>
-                    
-                        <br><br><br><br>
+
+                    <br>
 
                     <h3>Información Personal</h3>
                     <p>Teléfono: <span id="contenedor-telefono"></span></p>
@@ -90,6 +90,7 @@
         </section>
 
         <footer class="col-12">
+            <!--Los links son hacia las redes sociales directas para no poner información personal-->
             <h3>Redes de Contacto</h3>
             <a href="https://www.instagram.com/" target="_blank">
                 <img src="Imagenes/logo insta.jpg" alt="logo instagram">
