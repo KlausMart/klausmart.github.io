@@ -25,8 +25,8 @@ const calcularEdad=(fechaNacimiento)=>{
   }
   return edad
 }
-/** 
-window.addEventListener(`load`, function() {
+
+window.addEventListener(`click`, function() {
 
   fechaNacimiento.addEventListener(`change`, function() {
     if(this.value){
@@ -34,7 +34,7 @@ window.addEventListener(`load`, function() {
     }
     
   })
-})*/
+})
 
 document.getElementById(`crear-cv`).addEventListener(`click`, function () {
   let nombre = document.getElementById(`nombre`).value;
@@ -55,6 +55,6 @@ document.getElementById(`crear-cv`).addEventListener(`click`, function () {
   document.getElementById(`contenedor-telefono`).innerHTML = telefono
   document.getElementById(`contenedor-email`).innerHTML = email
   document.getElementById(`contenedor-direccion`).innerHTML = nombre
-  document.getElementById(`contenedor-edad`).innerHTML = edad.calcularEdad(this.value)
+  document.getElementById(`contenedor-edad`).innerHTML = calcularEdad(this.value)
   
 });
