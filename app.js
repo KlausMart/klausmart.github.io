@@ -55,6 +55,5 @@ document.getElementById(`crear-cv`).addEventListener(`click`, function () {
   document.getElementById(`contenedor-telefono`).innerHTML = telefono
   document.getElementById(`contenedor-email`).innerHTML = email
   document.getElementById(`contenedor-direccion`).innerHTML = nombre
-  document.getElementById(`contenedor-edad`).innerHTML = calcularEdad(this.value)
-  
+  document.getElementById(`contenedor-edad`).innerText = calcularEdad()
 });
