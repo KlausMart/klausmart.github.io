@@ -31,10 +31,6 @@ body {
   text-align: center;
 }
 
-h4 {
-  color: rgb(255, 255, 255);
-}
-
 .col-2 {
   float: left;
   width: 40px;
@@ -94,7 +90,9 @@ h3 {
   text-decoration-line: underline;
 }
 
-
+h4 {
+  color: rgb(53, 85, 173);
+}
 
 img {
   border-radius: 50%;
@@ -117,7 +115,10 @@ button:hover {
   transform: scale(1.1);
 }
 .col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
+.col-2 {
+  width: 16.66%;
+  position: relative;
+  }
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
 .col-5 {width: 41.66%;}
@@ -127,7 +128,10 @@ button:hover {
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-12 {
+  width: 100%;
+  position: relative;
+  }
 
 @media (max-width: 740px) {
   [class*="formulario"] {
