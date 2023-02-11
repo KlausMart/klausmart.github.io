@@ -1,12 +1,8 @@
 
-
 * {
   margin: 0px;
   box-sizing: border-box;
 }
-
-
-
 
 header {
   background-image: url("https://www.shutterstock.com/image-photo/banner-software-developer-programming-code-260nw-1076540219.jpg");
@@ -31,6 +27,10 @@ body {
   text-align: center;
 }
 
+.row {
+  height: auto;
+}
+
 .col-2 {
   float: left;
   width: 40px;
@@ -45,8 +45,6 @@ body {
   box-shadow: 2px 2px 7px rgb(187, 198, 214);
   border-radius: 10px;
 }
-
-
 
 .col-10 {
   float: right;
@@ -134,24 +132,7 @@ button:hover {
   }
 
 @media (max-width: 740px) {
-  [class*="formulario"] {
-    width: 100%;
-  }
-  [element-id="nombre"] {
-    width: relative;
-  }
-  [element-id="telefono"] {
-    width: relative;
-  }
-  [element-id="mail"] {
-    width: 100%;
-  }
-  [element-id="direccion"] {
-    width: 100%;
-  }
-  [element-id="fechaNacimiento"] {
-    width: 100%;
-  }
+  
   [class*="row"] {
     width: 100%;
   }
