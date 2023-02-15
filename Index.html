@@ -6,91 +6,89 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CV - Proyecto</title>
         <link rel="icon" type="image/x-icon" href="Imagenes/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="estilo-cv.css">
-        <!-- codigo bootstrap para columnas-->
-        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>-->
+        <!--<link rel="stylesheet" type="text/css" href="estilo-cv.css">-->
+        <link rel="stylesheet" type="text/css" href="estilos.css">
 
     </head>
     <body>
+        <div class="grid-container">
 
-        <header>
-            <div>
+            <header class="col-12 encabezado">
                 <div>
                     <img src="Imagenes/foto-cv.jpg" alt="Foto CV" id="foto" style="float: left">
+                    
+                    
+                    <h1 id="nombre">CLAUDIO SIMPSON </h1>
+                    <h2 id="titulo">Desarrollador Front End</h2>
                 </div>
                 
-                <h1><span id="contenedor-nombre">CLAUDIO SIMPSON</span> </h1>
-                <h2 id="titulo">Desarrollador Front End</h2>
-            </div>
-            
 
-        </header>
+            </header>
 
-        <section class="row">
-            <aside class="col-2">
+            <section class="row">
+                <aside class="col-2 aside">
+                    <div id="informacion">
+                        <h3>Objetivos</h3>
+                        <p>Gran motivación para seguir
+                            perfeccionando habilidades y
+                            crecer profesionalmente. Confío
+                            plenamente en mi capacidad de
+                            producir ideas interesantes para
+                            futuros proyectos que no
+                            van a pasar desapercibidas</p>
+
+                        <br>
+
+                        <h3>Información Personal</h3>
+                        <p>Teléfono: 341-6156816</span></p>
+                        <p>Email: claudio@email.com</p>
+                        <p>Dirección: Av. Siempre Viva 123</p>
+                        <p>Edad: 41</p>
+                    </div>
+                </aside>
+
+                <article class="col-10 articulo">
+                    <div>
+                        <h3>Experiencia Profesional</h3>
+                        <h5>Diseño Web -  <span>2017 - actualidad</span></h5>
+
+                        <h5>Desarrollador -  <span>2014 - 2017</span></h5>
+
+                        <h5>Asesor Comercial Motorla Company -  <span>2010 - 2014</span></h5>
+                    </div>
+                    <br><br><br><br><br>
+                    
+                    <div>
+                        <h3>Habilidades y Conocimientos</h3>
+                        <h5>Desarrollador Front End - <span>2022 - 2023</span></h5>
+                        <h5>Cusado en Academia Ticmas</h5>
+                    </div>
+                    
+                </article>
+            </section>
+
+            <footer class="col-12 footer">
                 <div>
-                    <h3>Objetivos</h3>
-                    <p>Gran motivación para seguir
-                        perfeccionando habilidades y
-                        crecer profesionalmente. Confío
-                        plenamente en mi capacidad de
-                        producir ideas interesantes para
-                        futuros proyectos que no
-                        van a pasar desapercibidas</p>
+                    <h4>¿Te gustaría concretar una entrevista?</h4>
 
-                    <br>
+                    <button onclick="entrevista()">Hace click acá</button>
 
-                    <h3>Información Personal</h3>
-                    <p>Teléfono: <span id="contenedor-telefono">341-6156816</span></p>
-                    <p>Email: <span id="contenedor-email"></span>claudio@email.com</p>
-                    <p>Dirección: <span id="contenedor-direccion"></span>Av. Siempre Viva 123</p>
-                    <p>Edad: <span id="contenedor-edad"></span>41</p>
+                    <p id="demo"></p>
                 </div>
-            </aside>
-
-            <article class="col-10">
-                <div>
-                    <h3>Experiencia Profesional</h3>
-                    <h5>Diseño Web -  <span>2017 - actualidad</span></h5>
-
-                    <h5>Desarrollador -  <span>2014 - 2017</span></h5>
-
-                    <h5>Asesor Comercial Motorla Company -  <span>2010 - 2014</span></h5>
-                </div>
-                <br><br><br><br><br><br><br><br>
-                
-                <div>
-                    <h3>Habilidades y Conocimientos</h3>
-                    <h5>Desarrollador Front End - <span>2022 - 2023</span></h5>
-                    <h5>Cusado en Academia Ticmas</h5>
-                </div>
-                
-            </article>
-        </section>
-
-        <footer class="col-12">
-            <div>
-                <h4>¿Te gustaría concretar una entrevista?</h4>
-
-                <button onclick="entrevista()">Hace click acá</button>
-
-                <p id="demo"></p>
-            </div>
-            <br>
-            <!--Los links son hacia las redes sociales directas para no poner información personal-->
-            <h3>Redes de Contacto</h3>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="Imagenes/logo insta.jpg" alt="logo instagram">
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="Imagenes/logo face.jpg" alt="logo facebook">
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank">
-                <img src="Imagenes/logo linkedin.jpg" alt="logo linkedin">
-            </a>
-        </footer>
+                <br>
+                <!--Los links son hacia las redes sociales directas para no poner información personal-->
+                <h3>Redes de Contacto</h3>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="Imagenes/logo insta.jpg" alt="logo instagram">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="Imagenes/logo face.jpg" alt="logo facebook">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="Imagenes/logo linkedin.jpg" alt="logo linkedin">
+                </a>
+            </footer>
+        </div>
 
         <script src="app.js"></script>
     </body>
