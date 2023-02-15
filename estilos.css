@@ -17,6 +17,7 @@
 header {
     background-image: url("https://www.shutterstock.com/image-photo/banner-software-developer-programming-code-260nw-1076540219.jpg");
     height: 150px;
+    grid-template-columns: 100%;
 }
 
 #nombre {
@@ -44,15 +45,10 @@ header {
     margin-left: 20px;
 }
 
-.section {
-    min-height: 340px;
-    max-height: auto;
-}
-
 .aside {
     float: left;
     margin: 0 auto;
-    height: 340px;
+    /*height: 340px;*/
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 7px rgb(187, 198, 214);
     text-align: left;
@@ -62,7 +58,7 @@ header {
 .articulo {
     float: left;
     margin: 0 auto;
-    height: 340px;
+    /*height: 340px;*/
     background-color: rgb(247, 9, 9);
     box-shadow: 2px 2px 7px rgb(187, 198, 214);
     text-align: left;
@@ -107,13 +103,12 @@ img {
     margin-left: 20px;
 }
 
-/**
+
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
     grid-template-rows: 150px auto 100px;
     grid-gap: 10px;
-}*/
+}
 
 
 
