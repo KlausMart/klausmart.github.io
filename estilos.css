@@ -3,20 +3,10 @@
     box-sizing: border-box;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 5px;
-}
-
 header {
     background-image: url("https://www.shutterstock.com/image-photo/banner-software-developer-programming-code-260nw-1076540219.jpg");
-    height: 150px;
+    height: auto;
+    grid-row: 150px;
     grid-template-columns: 100%;
 }
 
@@ -41,28 +31,43 @@ header {
 #foto {
     border-radius: 50%;
     width: 140px;
-    margin-top: 0px;
+    margin-top: 50px;
     margin-left: 20px;
 }
+
+.encabezado { grid-area: "encabeado"; }
+
+body {
+    grid-row: 100%;
+    grid-column: 100%;
+}
+
+aside{ height: auto;}
 
 .aside {
     float: left;
     margin: 0 auto;
-    /*height: 340px;*/
+    height: auto;
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 7px rgb(187, 198, 214);
     text-align: left;
     font-family: Helvetica, Garamond, Arial;
+    grid-row: auto;
+    grid-area: "aside";
 }
+
+article{ height: auto;}
 
 .articulo {
     float: left;
     margin: 0 auto;
-    /*height: 340px;*/
+    height: auto;
     background-color: rgb(247, 9, 9);
     box-shadow: 2px 2px 7px rgb(187, 198, 214);
     text-align: left;
     font-family: Helvetica, Garamond, Arial;
+    grid-row: auto;
+    grid-area: "articulo";
 }
 
 h3 {
@@ -78,12 +83,18 @@ h4 {
     color: rgb(53, 85, 173);
 }
 
+footer{ 
+    bottom: 0;
+    position: absolute;
+}
+
 .footer {
     margin: 0 auto;
     background-color: rgb(92, 154, 209);
     box-shadow: 2px 2px 7px rgb(187, 198, 214);
     text-align: center;
     font-family: Helvetica, Garamond, Arial;
+    grid-area: "footer";
 }
 
 button {
@@ -105,12 +116,26 @@ img {
 
 
 .grid-container {
+    height: 100vh;
     display: grid;
-    grid-template-rows: 150px auto 100px;
+    /*grid-template-areas: 
+        "header header header header header header header header header header header header"
+        "aside aside articulo articulo articulo articulo articulo articulo articulo articulo articulo articulo" 
+        "footer footer footer footer footer footer footer footer footer footer footer footer";*/
+    grid-template-rows: 200px auto 100px;
     grid-gap: 10px;
 }
 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
 
 /* For desktop: */
 .col-1 {width: 8.33%;}
