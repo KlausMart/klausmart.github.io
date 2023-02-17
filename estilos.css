@@ -62,7 +62,11 @@ article{ height: auto;}
     float: left;
     margin: 0 auto;
     height: auto;
-    background-color: rgb(247, 9, 9);
+    /*background-size: auto;
+    background-position: auto;*/
+    background-image: url(Imagenes/fondo\ azul.jpg);
+    
+    /*background-color: rgb(118, 171, 250);*/
     box-shadow: 2px 2px 7px rgb(187, 198, 214);
     text-align: left;
     font-family: Helvetica, Garamond, Arial;
@@ -81,6 +85,10 @@ p {
 
 h4 {
     color: rgb(53, 85, 173);
+}
+
+#descripcion {
+    font-size: small;
 }
 
 footer{ 
