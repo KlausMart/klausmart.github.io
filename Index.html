@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html lang="es">
+    
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +7,29 @@
         <title>CV - Proyecto</title>
         <link rel="icon" type="image/x-icon" href="Imagenes/favicon.ico">
         <!--<link rel="stylesheet" type="text/css" href="estilo-cv.css">-->
-        <link rel="stylesheet" type="text/css" href="estilos.css">
-
+        <link rel="stylesheet" type="text/css" href="estilosnuevo.css">
     </head>
 
     <body>
 
-        <div class="grid-container row">
+        <div class="contenedor">
 
-            <header class="col-12 encabezado">
-                <div>
-                    <img src="Imagenes/foto-cv.jpg" alt="Foto CV" id="foto" style="float: left">
+            <div class="encabezado">
+                <header>
                     
-                    
-                    <h1 id="nombre">CLAUDIO SIMPSON </h1>
-                    <h2 id="titulo">Desarrollador Front End</h2>
-                </div>
-                
+                        <div>
+                            <img src="Imagenes/foto-cv.jpg" alt="Foto CV" id="foto" style="float: left">
+                        </div>    
+                        <div>
+                            <h1 id="nombre">CLAUDIO SIMPSON </h1>
+                            <h2 id="titulo">Desarrollador Front End</h2>
+                        </div>
+                        
+                </header>
+            </div>
 
-            </header>
-
-
-            <section class="section">
-
-                <aside class="col-2 aside">
-                    <div id="informacion">
-                        <h3>Objetivos</h3>
+            <div class="informacion">
+                <h3>Objetivos</h3>
                         <p>
                             Gran motivación para seguir
                             perfeccionando habilidades y
@@ -42,93 +39,109 @@
                             futuros proyectos que no
                             van a pasar desapercibidas</p>
 
-                        <br><br><br>
+                        <br><br><br><br>
 
                         <h3>Información Personal</h3>
-                        <p>Teléfono: 341-6156816</span></p>
-                        <p>Email: claudio@email.com</p>
-                        <p>Dirección: Av. Siempre Viva 123</p>
+                        <p>Teléfono: <a href="https://web.whatsapp.com/" target="_blank" rel="nooper noreferrer">341-6156816</a></p>
+                        <p>Email: <a href="mailto:claudio@email.com?Subject=Quisiera%20una%20entrevista"
+                            Hola Me gustaría que pudieramos organizar una entrevista>
+                            claudio@email.com</a></p>
+                        <p>Dirección: <a href="https://www.google.com.ar/maps/place/Rosario,+Santa+Fe/"
+                            target="_blank" rel="nooper noreferrer">
+                            Siempre Viva 123</a></p>
                         <p>Edad: 41</p>
-                    </div>
-                </aside>
+            </div>
 
-                <article class="col-10 articulo">
-                    <div>
-                        <h3>Experiencia Profesional</h3>
-                        <h5>Diseño Web -  <span>2017 - actualidad</span></h5>
-                        <p id="descripcion">
-                            A cargo de equipo de 6 personas<br>
-                            Evaluación de personal<br>
-                            Entrevistas<br>
-                            Cierre y control de cajas<br>
-                            Estrategías de ventas
-                        </p>
-                        <br>
-                        <h5>Gerente de Ventas -  <span>2014 - 2017</span></h5>
-                        <p id="descripcion">
-                            A cargo de equipo de 6 personas<br>
-                            Evaluación de personal<br>
-                            Entrevistas<br>
-                            Cierre y control de cajas<br>
-                            Estrategías de ventas
-                        </p>
-                        <br>
-                        <h5>Asesor Comercial Motorla Company -  <span>2010 - 2014</span></h5>
-                        <p id="descripcion">
-                            Planeamiento de estrategia de ventas en puntos asignados<br>
-                            Control de stock<br>
-                            Asesoramiento a clientes
-                        </p>
-                    </div>
-                    <br>
-                    
-                    <div>
-                        <h3>Habilidades y Conocimientos</h3>
-                        <h5>Desarrollador Front End - <span>2022 - 2023</span></h5>
-                        <p id="descripcion">
-                            Cursado en Argentina Programa, a través de Academia Ticmas
-                        </p>
-                        <br>
-                        <h5>Licenciatura en Comercialización - <span>2012 - 2014</span></h5>
-                        <p id="descripcion">
-                            Cursado en Universidad Kenedy
-                        </p>
-                    </div>
-                    
-                </article>
-            </section>
+            <div class="experiencia">
 
-            <footer class="col-12 footer">
+                <div id="trabajos">
 
-                <div>
-                    <h4>¿Te gustaría concretar una entrevista?</h4>
+                    <h3>Experiencia Profesional</h3>
+                    <h5>Celulares TLQB -  <span>2017 - actualidad</span></h5>
+                    <p id="descripcion">
+                        A cargo de equipo de trabajo<br>
+                        Evaluación de personal<br>
+                        Cierre y control de cajas<br>
+                        Estrategías de ventas
+                    </p>
 
-                    <button onclick="entrevista()">Hace click acá</button>
-
-                    <p id="demo"></p>
-                
                     <br>
 
-                    <!--Los links son hacia las redes sociales directas para no poner información personal-->
-                    <h3>Redes de Contacto</h3>
-                    <a href="https://www.instagram.com/" target="_blank" rel="nooper noreferrer">
-                        <img src="Imagenes/logo insta.jpg" alt="logo instagram">
-                    </a>
-                    <a href="https://www.facebook.com/" target="_blank" rel="nooper noreferrer">
-                        <img src="Imagenes/logo face.jpg" alt="logo facebook">
-                    </a>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="nooper noreferrer">
-                        <img src="Imagenes/logo linkedin.jpg" alt="logo linkedin">
-                    </a>
+                    <h5>Gerente de Ventas -  <span>2014 - 2017</span></h5>
+                    <p id="descripcion">
+                        A cargo de equipo de 6 personas<br>
+                        Evaluación de personal<br>
+                        Entrevistas<br>
+                        Cierre y control de cajas<br>
+                        Estrategías de ventas
+                    </p>
+
+                    <br>
+
+                    <h5>Asesor Comercial Motorla Company -  <span>2010 - 2014</span></h5>
+                    <p id="descripcion">
+                        Planeamiento de estrategia de ventas en puntos asignados<br>
+                        Control de stock<br>
+                        Asesoramiento a clientes
+                    </p>
 
                 </div>
 
-            </footer>
+                <br>
+                    
+                <div id="estudios">
+
+                    <h3>Habilidades y Conocimientos</h3>
+                    <h5>Desarrollador Front End - <span>2022 - 2023</span></h5>
+                    <p id="descripcion">
+                        Cursado en Argentina Programa, a través de Academia Ticmas
+                    </p>
+
+                    <br>
+
+                    <h5>Licenciatura en Comercialización - <span>2012 - 2014</span></h5>
+                    <p id="descripcion">
+                        Cursado en Universidad Kenedy
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div>
+                <footer class="footer">
+
+                    <div>
+                        <h4>¿Te gustaría concretar una entrevista?</h4>
+    
+                        <button onclick="entrevista()">Hace click acá</button>
+    
+                        <p id="demo"></p>
+                    
+                        <br>
+    
+                        <!--Los links son hacia las redes sociales directas para no poner información personal-->
+                        <h3>Redes de Contacto</h3>
+                        <a href="https://www.instagram.com/" target="_blank" rel="nooper noreferrer">
+                            <img src="Imagenes/logo insta.jpg" alt="logo instagram">
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="nooper noreferrer">
+                            <img src="Imagenes/logo face.jpg" alt="logo facebook">
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="nooper noreferrer">
+                            <img src="Imagenes/logo linkedin.jpg" alt="logo linkedin">
+                        </a>
+    
+                    </div>
+
+                </footer>
+
+            </div>
+
 
         </div>
 
-        <script src="app.js"></script>
+        <script src="funcion.js"></script>
 
     </body>
-
 </html>
