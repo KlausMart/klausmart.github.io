@@ -44,6 +44,9 @@ body {
     font-style: italic;
 }
 
+#objetivos {
+    text-align: justify;
+}
 
 .informacion {
     grid-area: informacion;
@@ -53,16 +56,32 @@ body {
     text-align: left;
 }
 
+
 h3 {
     color: rgb(3, 28, 97);
     text-decoration-line: underline;
-    font-family: Helvetica, Garamond, Arial;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: x-large;
 }
 
 p {
     color: rgb(0, 0, 0);
-    font-family: Helvetica, Garamond, Arial;
+    font-family: 'Roboto', sans-serif;
     font-size: small;
+}
+
+h5 {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size:medium;
+}
+
+span {
+    color: rgb(25, 17, 124);
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size:medium;
 }
 
 .experiencia {
@@ -71,6 +90,13 @@ p {
     background-image: url(Imagenes/programador.png);
     background-color: rgb(138, 241, 245);
     text-align: left;
+    padding-bottom: 80px;
+}
+
+.descripcion {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
 }
 
 .footer {
