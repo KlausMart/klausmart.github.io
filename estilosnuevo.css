@@ -92,7 +92,8 @@ span {
 .experiencia {
     grid-area: experiencia;
     padding: 10px;
-    background-image: url(Imagenes/programador.png);
+    /*background-image: url(Imagenes/programador.png);*/
+    background-image: url(Imagenes/programador2.png);
     background-color: rgb(138, 241, 245);
     text-align: left;
     padding-bottom: 80px;
